@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-management-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: product-management-backend
+  template:
+    metadata:
+      labels:
+        app: product-management-backend
+    spec:
+      containers:
+        - name: backend
+          image: <your_dockerhub_or_ecr_image>
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-management-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: product-management-backend

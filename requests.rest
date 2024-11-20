@@ -1,0 +1,14 @@
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "user_id": 1,
+  "product_name": "Sample Product",
+  "product_description": "This is a test product.",
+  "product_images": ["https://example.com/image1.jpg"],
+  "product_price": 99.99
+}
+
+###
+GET http://localhost:8080/products
