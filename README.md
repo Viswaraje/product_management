@@ -7,3 +7,10 @@ Retrieve Product: Get product details using its ID.
 Query Products: Fetch all products with filters (e.g., user ID, price range).
 Caching: Redis is used for performance optimization.
 Image Processing: Simulates tasks like resizing images.
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=product_management
+DB_USER=pm_user
+DB_PASSWORD=yourpassword
+REDIS_HOST=localhost
+REDIS_PORT=6379
