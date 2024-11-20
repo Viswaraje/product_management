@@ -31,3 +31,13 @@ Ensure the following are installed:
 ```bash
 git clone https://github.com/yourusername/product-management.git
 cd product-management
+
+
+### 3. Configure Environment Variables
+
+1. Copy the `.env.example` file to `.env`:
+
+   ```bash
+   cp .env.example .env
+
+
